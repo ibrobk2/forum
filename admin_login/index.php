@@ -3,13 +3,13 @@
 session_start();
 
 // Check if the user is already logged in, if yes then redirect them to the welcome page
-if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-    header("location: ./student_dashboard");
+if (isset($_SESSION["loggedin_admin"]) && $_SESSION["loggedin_admin"] === true) {
+    header("location: ../admin_dashboard");
     exit;
 }
 
 // Include config file
-require 'config.php';
+require '../config.php';
 
 // Define variables and initialize with empty values
 $username = $password = "";
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate credentials
     if (empty($username_err) && empty($password_err)) {
         // Prepare a select statement
-        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        $sql = "SELECT id, username, password FROM admin WHERE username = ?";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
             // Bind variables to the prepared statement as parameters
@@ -58,12 +58,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             session_start();
 
                             // Store data in session variables
-                            $_SESSION["loggedin"] = true;
+                            $_SESSION["loggedin_admin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
 
                             // Redirect user to welcome page
-                            header("location: welcome.php");
+                            header("location: ../admin_dashboard");
                         } else {
                             // Display an error message if the password is not valid
                             $password_err = "The password you entered was not valid.";
@@ -91,16 +91,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Student Login</title>
+    <title>Login</title>
     <style>
         body { font: 14px sans-serif; }
         .wrapper { width: 360px; padding: 20px; margin: 0 auto; }
     </style>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../login.css">
 </head>
 <body>
     <div class="wrapper">
-        <h2>Student Login</h2>
+        <h2>Admin Login</h2>
         <p>Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            <!-- <p>Don't have an account? <a href="register.php">Sign up now</a>.</p> -->
         </form>
     </div>
 </body>
