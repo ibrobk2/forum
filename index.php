@@ -18,7 +18,7 @@
                 <li><a href="about.php">About</a></li>
             </ul>
         </nav>
-        <button class="register-btn">Register</button>
+        <a href="register.php"><button class="register-btn">Register</button></a>
     </header>
 
     <!-- Hero Section -->
@@ -26,8 +26,8 @@
         <h1>Connect, Learn, and Grow with Fellow Students</h1>
         <p>Join our academic community to collaborate, share knowledge, and achieve academic excellence.</p>
         <div class="cta-buttons">
-            <button>Register Now</button>
-            <button>Learn More</button>
+            <a href="register.php"><button>Register Now</button></a>
+            <a href="login.php"><button>Login</button></a>
         </div>
     </section>
 
@@ -58,7 +58,7 @@
     <footer>
         <p>&copy;2024 Department of Computer Science - UMYU Katsina.</p>
         <ul class="social-links">
-            <li><a href="#">Facebook</a></li>
+            <li><a href="https://web.facebook.com/groups/514840751934791/" target="_blank">Facebook</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">LinkedIn</a></li>
