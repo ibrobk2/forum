@@ -111,10 +111,10 @@ session_start();
                 <h4 class="text-section">Components</h4>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#base">
+                <a data-bs-toggle="" href="./pages/upload_form.php">
                   <i class="fas fa-layer-group"></i>
-                  <p>Base</p>
-                  <span class="caret"></span>
+                  <p>Upload File</p>
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
@@ -386,7 +386,7 @@ session_start();
                 </div>
               </nav>
 
-              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+              <!-- <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
                 <li
                   class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
                 >
@@ -658,64 +658,64 @@ session_start();
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> -->
 
-                <li class="nav-item topbar-user dropdown hidden-caret">
+                <!-- <li class="nav-item topbar-user dropdown hidden-caret">
                   <a
                     class="dropdown-toggle profile-pic"
                     data-bs-toggle="dropdown"
                     href="#"
                     aria-expanded="false"
-                  >
-                    <div class="avatar-sm">
+                  > -->
+                    <!-- <div class="avatar-sm">
                       <img
                         src="assets/img/profile.jpg"
                         alt="..."
                         class="avatar-img rounded-circle"
                       />
-                    </div>
-                    <span class="profile-username">
+                    </div> -->
+                    <span class="profile-username" style="float: right;">
                       <span class="op-7">Hi,</span>
                       <span class="fw-bold"><?php echo $_SESSION['username']; ?></span>
                     </span>
                   </a>
-                  <ul class="dropdown-menu dropdown-user animated fadeIn">
-                    <div class="dropdown-user-scroll scrollbar-outer">
-                      <li>
+                  <ul class="dropdown-menu1 dropdown-user1 animated fadeIn">
+                    <div class="dropdown-user-scroll2 scrollbar-outer">
+                      <!-- <li> -->
                         <div class="user-box">
                           <div class="avatar-lg">
-                            <img
+                            <!-- <img
                               src="assets/img/profile.jpg"
                               alt="image profile"
                               class="avatar-img rounded"
-                            />
+                            /> -->
                           </div>
                           <div class="u-text">
-                            <h4>Hizrian</h4>
-                            <p class="text-muted">hello@example.com</p>
-                            <a
+                            <!-- <h4>Hizrian</h4> -->
+                            <!-- <p class="text-muted">hello@example.com</p> -->
+                            <!-- <a
                               href="profile.html"
                               class="btn btn-xs btn-secondary btn-sm"
                               >View Profile</a
-                            >
+                            > -->
                           </div>
                         </div>
-                      </li>
-                      <li>
-                        <div class="dropdown-divider"></div>
+                      <!-- </li> -->
+                      <!-- <li> -->
+                        <!-- <div class="dropdown-divider"></div> -->
                         <!-- <a class="dropdown-item" href="#">My Profile</a> -->
                         <!-- <a class="dropdown-item" href="#">My Balance</a>
                         <a class="dropdown-item" href="#">Inbox</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Account Setting</a>
                         <div class="dropdown-divider"></div> -->
-                        <a class="dropdown-item" href="logout.php">Logout</a>
-                      </li>
-                    </div>
+                        <!-- <a class="dropdown-item" href="logout.php">Logout</a> -->
+                      <!-- </li> -->
+                    <!-- </div>
                   </ul>
                 </li>
               </ul>
-            </div>
+            </div> -->
           </nav>
           <!-- End Navbar -->
         </div>
@@ -730,8 +730,8 @@ session_start();
                 <!-- <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6> -->
               </div>
               <div class="ms-md-auto py-2 py-md-0">
-                <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
-                <a href="#" class="btn btn-primary btn-round">Add Customer</a>
+                <!-- <a href="#" class="btn btn-label-info btn-round me-2">Manage</a> -->
+                <a href="./pages/upload_form.php" class="btn btn-primary btn-round">Upload File</a>
                 <a href="logout.php" class="btn btn-danger btn-round">Logout</a>
               </div>
             </div>
@@ -821,7 +821,7 @@ session_start();
                 </div>
               </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-8">
                 <div class="card card-round">
                   <div class="card-header">
@@ -1217,7 +1217,7 @@ session_start();
                   </div>
                   <div class="card-body p-0">
                     <div class="table-responsive">
-                      <!-- Projects table -->
+                       Projects table 
                       <table class="table align-items-center mb-0">
                         <thead class="thead-light">
                           <tr>
@@ -1341,9 +1341,9 @@ session_start();
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <footer class="footer">
+        <!-- <footer class="footer">
           <div class="container-fluid d-flex justify-content-between">
             <nav class="pull-left">
               <ul class="nav">
@@ -1370,10 +1370,10 @@ session_start();
             </div>
           </div>
         </footer>
-      </div>
+      </div> -->
 
       <!-- Custom template | don't include it in your project! -->
-      <div class="custom-template">
+      <!-- <div class="custom-template">
         <div class="title">Settings</div>
         <div class="custom-content">
           <div class="switcher">
@@ -1564,7 +1564,7 @@ session_start();
         <div class="custom-toggle">
           <i class="icon-settings"></i>
         </div>
-      </div>
+      </div> -->
       <!-- End Custom template -->
     </div>
     <!--   Core JS Files   -->
