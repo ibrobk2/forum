@@ -167,10 +167,10 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                <a data-bs-toggle="" href="../chat.php">
                   <i class="fas fa-th-list"></i>
-                  <p>Sidebar Layouts</p>
-                  <span class="caret"></span>
+                  <p>Chat</p>
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="sidebarLayouts">
                   <ul class="nav nav-collapse">
@@ -188,10 +188,10 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#forms">
+                <a data-bs-toggle="" href="./pages/manage_files.php">
                   <i class="fas fa-pen-square"></i>
-                  <p>Forms</p>
-                  <span class="caret"></span>
+                  <p>Manage Files</p>
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="forms">
                   <ul class="nav nav-collapse">
@@ -204,10 +204,10 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#tables">
+                <a data-bs-toggle="" href="send_email.php">
                   <i class="fas fa-table"></i>
-                  <p>Tables</p>
-                  <span class="caret"></span>
+                  <p>Send Email</p>
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="tables">
                   <ul class="nav nav-collapse">
@@ -225,10 +225,10 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#maps">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>Maps</p>
-                  <span class="caret"></span>
+                <a data-bs-toggle="collapse" href="logout.php">
+                  <i class="fas fa-lock"></i>
+                  <p>Logout</p>
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="maps">
                   <ul class="nav nav-collapse">
@@ -246,10 +246,10 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#charts">
-                  <i class="far fa-chart-bar"></i>
-                  <p>Charts</p>
-                  <span class="caret"></span>
+                <!-- <a data-bs-toggle="" href="#charts"> -->
+                  <!-- <i class="far fa-chart-bar"></i> -->
+                  <!-- <p>Charts</p> -->
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="charts">
                   <ul class="nav nav-collapse">
@@ -267,67 +267,67 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a href="widgets.html">
-                  <i class="fas fa-desktop"></i>
-                  <p>Widgets</p>
-                  <span class="badge badge-success">4</span>
+                <!-- <a href="widgets.html"> -->
+                  <!-- <i class="fas fa-desktop"></i> -->
+                  <!-- <p>Widgets</p> -->
+                  <!-- <span class="badge badge-success">4</span> -->
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
-                  <i class="fas fa-file"></i>
-                  <p>Documentation</p>
-                  <span class="badge badge-secondary">1</span>
+                <!-- <a href="../../documentation/index.html"> -->
+                  <!-- <i class="fas fa-file"></i> -->
+                  <!-- <p>Documentation</p> -->
+                  <!-- <span class="badge badge-secondary">1</span> -->
                 </a>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#submenu">
-                  <i class="fas fa-bars"></i>
-                  <p>Menu Levels</p>
-                  <span class="caret"></span>
+                <!-- <a data-bs-toggle="collapse" href="#submenu"> -->
+                  <!-- <i class="fas fa-bars"></i> -->
+                  <!-- <p>Menu Levels</p> -->
+                  <!-- <span class="caret"></span> -->
                 </a>
-                <div class="collapse" id="submenu">
+                <div class="" id="submenu">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a data-bs-toggle="collapse" href="#subnav1">
-                        <span class="sub-item">Level 1</span>
-                        <span class="caret"></span>
+                      <!-- <a data-bs-toggle="collapse" href="#subnav1"> -->
+                        <!-- <span class="sub-item">Level 1</span> -->
+                        <!-- <span class="caret"></span> -->
                       </a>
                       <div class="collapse" id="subnav1">
                         <ul class="nav nav-collapse subnav">
                           <li>
-                            <a href="#">
-                              <span class="sub-item">Level 2</span>
+                            <!-- <a href="#"> -->
+                              <!-- <span class="sub-item">Level 2</span> -->
                             </a>
                           </li>
                           <li>
-                            <a href="#">
-                              <span class="sub-item">Level 2</span>
+                            <!-- <a href="#">
+                              <span class="sub-item">Level 2</span> -->
                             </a>
                           </li>
                         </ul>
                       </div>
                     </li>
                     <li>
-                      <a data-bs-toggle="collapse" href="#subnav2">
+                      <!-- <a data-bs-toggle="collapse" href="#subnav2">
                         <span class="sub-item">Level 1</span>
                         <span class="caret"></span>
-                      </a>
+                      </a> -->
                       <div class="collapse" id="subnav2">
                         <ul class="nav nav-collapse subnav">
-                          <li>
+                          <!-- <li>
                             <a href="#">
                               <span class="sub-item">Level 2</span>
                             </a>
-                          </li>
+                          </li> -->
                         </ul>
                       </div>
                     </li>
-                    <li>
+                    <!-- <li>
                       <a href="#">
                         <span class="sub-item">Level 1</span>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </li>
