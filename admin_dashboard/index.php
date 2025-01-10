@@ -749,8 +749,16 @@ session_start();
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
-                          <p class="card-category">Visitors</p>
-                          <h4 class="card-title">1,294</h4>
+                          <p class="card-category">Users</p>
+                          <?php
+                          
+                          include "./pages/config.php";
+                          $sql = "SELECT * FROM users";
+                          $result = mysqli_query($link, $sql);
+                          $row = mysqli_fetch_array($result);
+                          $total_users = mysqli_num_rows($result);
+                          ?>
+                          <h4 class="card-title"><?=$total_users;   ?></h4>
                         </div>
                       </div>
                     </div>
@@ -770,8 +778,16 @@ session_start();
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
-                          <p class="card-category">Subscribers</p>
-                          <h4 class="card-title">1303</h4>
+                        <?php
+                          
+                          // include "./pages/config.php";
+                          $sql = "SELECT * FROM admin";
+                          $result = mysqli_query($link, $sql);
+                          $row = mysqli_fetch_array($result);
+                          $total_admins = mysqli_num_rows($result);
+                          ?>
+                          <p class="card-category">Admins</p>
+                          <h4 class="card-title"><?=$total_admins; ?></h4>
                         </div>
                       </div>
                     </div>
@@ -786,13 +802,21 @@ session_start();
                         <div
                           class="icon-big text-center icon-success bubble-shadow-small"
                         >
-                          <i class="fas fa-luggage-cart"></i>
+                          <i class="fas fa-download"></i>
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
-                          <p class="card-category">Sales</p>
-                          <h4 class="card-title">$ 1,345</h4>
+                        <?php
+                          
+                          // include "./pages/config.php";
+                          $sql = "SELECT * FROM uploads";
+                          $result = mysqli_query($link, $sql);
+                          $row = mysqli_fetch_array($result);
+                          $total_uploads = mysqli_num_rows($result);
+                          ?>
+                          <p class="card-category">Uploads</p>
+                          <h4 class="card-title"><?=$total_uploads;  ?></h4>
                         </div>
                       </div>
                     </div>
@@ -812,8 +836,16 @@ session_start();
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
-                          <p class="card-category">Order</p>
-                          <h4 class="card-title">576</h4>
+                        <?php
+                          
+                          // include "./pages/config.php";
+                          $sql = "SELECT * FROM messages";
+                          $result = mysqli_query($link, $sql);
+                          $row = mysqli_fetch_array($result);
+                          $total_messages = mysqli_num_rows($result);
+                          ?>
+                          <p class="card-category">Chats</p>
+                          <h4 class="card-title"><?=$total_messages; ?></h4>
                         </div>
                       </div>
                     </div>
