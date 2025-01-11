@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["loggedin_admin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
-                            $_SESSION["user_type"] = $user_type;
+                            $_SESSION["user_type"] = 'admin';
 
                             // Redirect user to welcome page
                             header("location: ../admin_dashboard");
@@ -119,6 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <!-- <p>Don't have an account? <a href="register.php">Sign up now</a>.</p> -->
         </form>
+        <?php include "./footer.php"; ?>
     </div>
 </body>
 </html>

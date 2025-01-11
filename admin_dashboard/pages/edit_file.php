@@ -47,6 +47,7 @@ if ($stmt = mysqli_prepare($link, $sql)) {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
+    <?php include "navbar.php"; ?>
     <div class="container mt-5">
         <h2 class="mb-4">Edit File</h2>
         <form action="edit_file.php" method="post">
@@ -73,6 +74,7 @@ if ($stmt = mysqli_prepare($link, $sql)) {
         });
     </script>
     <?php endif; ?>
+    <?php include "footer.php"; ?>
 </body>
 </html>
 

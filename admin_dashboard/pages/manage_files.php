@@ -17,6 +17,7 @@ $result = mysqli_query($link, $sql);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
 </head>
 <body>
+    <?php include "navbar.php"; ?>
     <div class="container mt-5">
         <h2 class="mb-4">Manage Files</h2>
         <table id="filesTable" class="table table-striped table-bordered">
@@ -49,6 +50,7 @@ $result = mysqli_query($link, $sql);
             </tbody>
         </table>
     </div>
+    <?php include "footer.php"; ?>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>

@@ -109,13 +109,13 @@ session_start();
                 <span class="sidebar-mini-icon">
                   <i class="fa fa-ellipsis-h"></i>
                 </span>
-                <h4 class="text-section">Components</h4>
+                <h4 class="text-section"></h4>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#base">
-                  <i class="fas fa-layer-group"></i>
-                  <p>Base</p>
-                  <span class="caret"></span>
+                <a data-bs-toggle="" href="./pages/download_files.php">
+                  <i class="fas fa-download"></i>
+                  <p>Download Materials</p>
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
@@ -168,10 +168,10 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarLayouts">
-                  <i class="fas fa-th-list"></i>
-                  <p>Sidebar Layouts</p>
-                  <span class="caret"></span>
+                <a data-bs-toggle="" href="../chat.php">
+                  <i class="fas fa-pen-square"></i>
+                  <p>Chat</p>
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="sidebarLayouts">
                   <ul class="nav nav-collapse">
@@ -189,10 +189,10 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#forms">
-                  <i class="fas fa-pen-square"></i>
-                  <p>Forms</p>
-                  <span class="caret"></span>
+                <a data-bs-toggle="" href="./pages/sendmaill.php">
+                  <i class="fas fa-envelope"></i>
+                  <p>Send Email</p>
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="forms">
                   <ul class="nav nav-collapse">
@@ -205,10 +205,10 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#tables">
-                  <i class="fas fa-table"></i>
-                  <p>Tables</p>
-                  <span class="caret"></span>
+                <a data-bs-toggle="" href="../logout.php">
+                  <i class="fas fa-lock"></i>
+                  <p>Logout</p>
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="tables">
                   <ul class="nav nav-collapse">
@@ -227,9 +227,9 @@ session_start();
               </li>
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#maps">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>Maps</p>
-                  <span class="caret"></span>
+                  <!-- <i class="fas fa-map-marker-alt"></i> -->
+                  <!-- <p>Maps</p> -->
+                  <!-- <span class="caret"></span> -->
                 </a>
                 <div class="collapse" id="maps">
                   <ul class="nav nav-collapse">
@@ -247,11 +247,11 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#charts">
-                  <i class="far fa-chart-bar"></i>
-                  <p>Charts</p>
-                  <span class="caret"></span>
-                </a>
+                <!-- <a data-bs-toggle="collapse" href="#charts"> -->
+                  <!-- <i class="far fa-chart-bar"></i> -->
+                  <!-- <p>Charts</p> -->
+                  <!-- <span class="caret"></span> -->
+                <!-- </a> -->
                 <div class="collapse" id="charts">
                   <ul class="nav nav-collapse">
                     <li>
@@ -268,25 +268,25 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a href="widgets.html">
+                <!-- <a href="widgets.html">
                   <i class="fas fa-desktop"></i>
                   <p>Widgets</p>
                   <span class="badge badge-success">4</span>
-                </a>
+                </a> -->
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
+                <!-- <a href="../../documentation/index.html">
                   <i class="fas fa-file"></i>
                   <p>Documentation</p>
                   <span class="badge badge-secondary">1</span>
-                </a>
+                </a> -->
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#submenu">
+                <!-- <a data-bs-toggle="collapse" href="#submenu">
                   <i class="fas fa-bars"></i>
                   <p>Menu Levels</p>
                   <span class="caret"></span>
-                </a>
+                </a> -->
                 <div class="collapse" id="submenu">
                   <ul class="nav nav-collapse">
                     <li>
@@ -731,8 +731,8 @@ session_start();
                 <!-- <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6> -->
               </div>
               <div class="ms-md-auto py-2 py-md-0">
-                <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
-                <a href="#" class="btn btn-primary btn-round">Add Customer</a>
+                <!-- <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
+                <a href="#" class="btn btn-primary btn-round">Add Customer</a> -->
                 <a href="logout.php" class="btn btn-danger btn-round">Logout</a>
               </div>
             </div>
@@ -745,14 +745,14 @@ session_start();
                         <div
                           class="icon-big text-center icon-primary bubble-shadow-small"
                         >
-                          <i class="fas fa-users"></i>
+                          <i class="fas fa-download"></i>
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
-                        <div class="numbers">
-                          <p class="card-category">Visitors</p>
-                          <h4 class="card-title">1,294</h4>
-                        </div>
+                        <a href="./pages/download_files.php" class="numbers">
+                          <p class="card-category">Download </p>
+                          <h4 class="card-title">Materials</h4>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -766,14 +766,14 @@ session_start();
                         <div
                           class="icon-big text-center icon-info bubble-shadow-small"
                         >
-                          <i class="fas fa-user-check"></i>
+                          <i class="fas fa-users"></i>
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
-                        <div class="numbers">
-                          <p class="card-category">Subscribers</p>
-                          <h4 class="card-title">1303</h4>
-                        </div>
+                        <a href="../chat.php" class="numbers">
+                          <p class="card-category">Chat</p>
+                          <h4 class="card-title">Users</h4>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -787,14 +787,14 @@ session_start();
                         <div
                           class="icon-big text-center icon-success bubble-shadow-small"
                         >
-                          <i class="fas fa-luggage-cart"></i>
+                          <i class="fas fa-envelope"></i>
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
-                        <div class="numbers">
-                          <p class="card-category">Sales</p>
-                          <h4 class="card-title">$ 1,345</h4>
-                        </div>
+                        <a href="./pages/sendmaill.php" class="numbers">
+                          <p class="card-category">Send</p>
+                          <h4 class="card-title">Email</h4>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -808,21 +808,21 @@ session_start();
                         <div
                           class="icon-big text-center icon-secondary bubble-shadow-small"
                         >
-                          <i class="far fa-check-circle"></i>
+                          <i class="fa fa-lock"></i>
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
-                        <div class="numbers">
-                          <p class="card-category">Order</p>
-                          <h4 class="card-title">576</h4>
-                        </div>
+                        <a href="./logout.php" class="numbers">
+                          <p class="card-category">Logout</p>
+                          <h4 class="card-title">Now</h4>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-8">
                 <div class="card card-round">
                   <div class="card-header">
@@ -1037,8 +1037,8 @@ session_start();
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
+            </div> -->
+            <!-- <div class="row">
               <div class="col-md-4">
                 <div class="card card-round">
                   <div class="card-body">
@@ -1218,7 +1218,7 @@ session_start();
                   </div>
                   <div class="card-body p-0">
                     <div class="table-responsive">
-                      <!-- Projects table -->
+                       Projects table 
                       <table class="table align-items-center mb-0">
                         <thead class="thead-light">
                           <tr>
@@ -1342,9 +1342,9 @@ session_start();
               </div>
             </div>
           </div>
-        </div>
-
-        <footer class="footer">
+        </div> -->
+<?php include './pages/footer.php'; ?>
+        <!-- <footer class="footer">
           <div class="container-fluid d-flex justify-content-between">
             <nav class="pull-left">
               <ul class="nav">
@@ -1370,7 +1370,7 @@ session_start();
               <a target="_blank" href="https://themewagon.com/">ThemeWagon</a>.
             </div>
           </div>
-        </footer>
+        </footer> -->
       </div>
 
       <!-- Custom template | don't include it in your project! -->

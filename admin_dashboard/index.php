@@ -204,7 +204,7 @@ session_start();
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="" href="send_email.php">
+                <a data-bs-toggle="" href="./pages/ send_email.php">
                   <i class="fas fa-table"></i>
                   <p>Send Email</p>
                   <!-- <span class="caret"></span> -->

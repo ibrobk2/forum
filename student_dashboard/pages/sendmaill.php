@@ -11,6 +11,7 @@ require_once "phpMailer/SMTP.php";
 // require 'vendor/autoload.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+   // Retrieve form data
     $email = $_POST['email'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
@@ -28,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->Port       = '465';
 
         //Recipients
-        $mail->setFrom('mahmudbello98@gmail.com', 'Academic Forum');
+        $mail->setFrom('mahmudbello98@gmail.com', 'Mailer');
         $mail->addAddress($email);
 
         // Content
@@ -37,10 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->Body    = $message;
 
         $mail->send();
-        echo '<span class="alert alert-success">Message has been sent</span>';
+        echo 'Message has been sent';
     } catch (Exception $e) {
-        echo "<span class='alert alert-danger'></span>Message could not be sent. Mailer Error: {$mail->ErrorInfo}.</span>";
-
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
 ?>

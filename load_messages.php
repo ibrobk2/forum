@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "config.php";
 
 $chat_with = $_GET['chat_with'];

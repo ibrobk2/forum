@@ -2,10 +2,14 @@
 session_start();
 require_once "config.php";
 
+
+
 // Check if the user is logged in, if not then redirect to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if(!isset($_SESSION["loggedin"])){
+    if(!isset($_SESSION["loggedin_admin"])){
     header("location: login.php");
     exit;
+    }
 }
 
 $user_id = $_SESSION["id"];
@@ -38,13 +42,14 @@ while ($row = mysqli_fetch_assoc($admin_result)) {
      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
 </head>
 <body>
-    <div class="container mt-5">
+    <?php include "navbar_chat.php"; ?>
+    <div class="container mt-1">
         <h2 class="mb-4">Chat</h2>
         <div class="card">
             <div class="card-body">
                 <div class="form-group">
                     <label for="chat-with">Chat with:</label>
-                    <select id="chat-with" class="form-control">
+                    <select id="chat-with" class="form-control" >
                         <option value="">Select a user</option>
                         <optgroup label="Users">
                             <?php foreach ($users as $user): ?>
@@ -65,14 +70,15 @@ while ($row = mysqli_fetch_assoc($admin_result)) {
                     <div class="input-group">
                         <input type="text" id="message" class="form-control" placeholder="Type a message...">
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="submit">Send</button>
+                            <button class="btn btn-success" type="submit">Send</button>
                         </div>
+                       
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
+<?php include "footer.php"; ?>
     <script>
         $(document).ready(function() {
             // Load messages

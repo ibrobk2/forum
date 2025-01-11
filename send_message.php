@@ -5,6 +5,8 @@ require_once "config.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_id = $_SESSION["id"];
     $user_type = $_SESSION["user_type"];
+    // $user_id = $_POST["id"];
+    // $user_type = $_POST["user_type"];
     $message = $_POST["message"];
     $chat_with = $_POST["chat_with"];
     list($chat_with_type, $chat_with_id) = explode('-', $chat_with);
